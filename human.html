@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="human.css">
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <nav>
@@ -16,16 +19,16 @@
             <h1>Human Consult</h1>
         </div>
          <div class="nav-items">
-            <li>Demos
-                <div class="dropdown">
-                    <ul><li>Home1</li>
-                        <li>Home1</li>
-                        <li>Home1</li>
+            <a href=""><li>Demos
+                <div class="demos">
+                   <ul><li>Home1</li>
+                        <li>Home2</li>
+                        <li>Home3</li>
                     </ul>
                 </div>
-            </li>
-            <li>Company
-                <div class="dropdown">
+            </li></a>
+           <a href=""><li>Company
+                <div class="company">
                 <ul><li>AboutUs</li>
                     <li>Why choose Us</li>
                     <li>Services</li>
@@ -34,10 +37,10 @@
                     <li>pricing</li>
                 </ul>
                 </div>
-            </li>
-            <li>Services
-                <div class="dropdown">
-                    <div>
+            </li></a>
+            <a href=""><li>Services
+                <div class="services">
+                    <div class="hiring">
                         <div><ul>
                             <li style="font-weight: bold;">For Hiring</li>
                             <li>How we work</li>
@@ -54,14 +57,45 @@
                         </div>
                     </div>
                 </div>
-            </li>
-            <li>News</li>
-            <li>All Pages</li>
+            </li></a>
+            <a href=""><li>News</li></a>
+            <a href=""><li>All Pages
+                <div class="allpages">
+                    <div>
+                        <ul>
+                        <li>Home1</li>
+                        <li>Home2</li>
+                        <li>Home3</li>
+                        <li>About Us</li>
+                        <li>Leadership</li>
+                        <li>Pricing</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                        <li>Awards</li>
+                        <li>Why we choose us</li>
+                        <li>Locations</li>
+                        <li>How we work</li>
+                        <li>Services</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                        <li>Service Details</li>
+                        <li>Contact Us1</li>
+                        <li>Contact Us2</li>
+                        <li>shop</li>
+                        </ul>
+                    </div>
+                </div>
+            </li></a>
         </div>
         <div><ion-icon name="cart-outline" class="icon"></ion-icon></div>
         <button>Get In Touch</button>
         </div>
     </nav>
+
     <div class="para">
         <p>HR and Recruitment Agency</p> 
          <span>Web flow Template</span>
@@ -83,14 +117,62 @@
     <div class="homes">
         <div class="homes-sub1"><img class ="img4" src="img1.jpeg">
             <p>Home 1</p>
+            <div class="icon-div"><ion-icon name="eye-outline"></ion-icon></div>
         </div>
         <div class="homes-sub2"><img class="img5" src="img2.jpeg">
         <p>Home 2</p>
+        <div class="icon-div"><ion-icon class="icon" name="eye-outline"></ion-icon></div>
         </div>
-
         <div class="homes-sub3"><img class="img6" src="img3.jpeg">
         <p>Home 3</p>
+        <div class="icon-div"><ion-icon name="eye-outline"></ion-icon></div>
     </div>
     </div>
+
+    
+    <div class="blue">
+        <div class="title1">
+            <h1>Contact</h1>
+            <p>5 Washington Square, New York,<br> USA 83475</p>
+            <p>(217) 555-0113</p>
+            <p>hconsult@example.com</p>
+        </div>
+        <div class="title2">
+            <h1>Company</h1>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Pricing</p>
+        </div>
+        <div class="title3">
+            <h1>Useful Links</h1>
+            <p>FAQ</p>
+            <p>Location</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="title4">
+            <h1>Sign up for our newsletter!</h1>
+            <input type="text" placeholder="Enter Your Email Address"> <br> <br>
+            <div class="link">
+                <div class="link1">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="link2">
+            <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="link3">
+            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="link4">
+            <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <h1>Human consult</h1><br><br>
+        <p>©Human Consult. All Rights Reserved.<br>
+            Licensing Webflow Templates by 128.digital. Powered by Webflow</p>
+    </div>
+    <script src="human.js"></script>
 </body>
 </html>
