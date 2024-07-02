@@ -121,11 +121,11 @@
         </div>
         <div class="homes-sub2"><img class="img5" src="img2.jpeg">
         <p>Home 2</p>
-        <div class="icon-div"><ion-icon class="icon" name="eye-outline"></ion-icon></div>
+        <div class="icon-div2"><ion-icon name="eye-outline"></ion-icon></div>
         </div>
         <div class="homes-sub3"><img class="img6" src="img3.jpeg">
         <p>Home 3</p>
-        <div class="icon-div"><ion-icon name="eye-outline"></ion-icon></div>
+        <div class="icon-div3"><ion-icon name="eye-outline"></ion-icon></div>
     </div>
     </div>
 
@@ -173,6 +173,54 @@
         <p>©Human Consult. All Rights Reserved.<br>
             Licensing Webflow Templates by 128.digital. Powered by Webflow</p>
     </div>
-    <script src="human.js"></script>
+    <script >
+            var homesub1 = document.querySelector(".homes-sub1");
+            var homesub2 = document.querySelector(".homes-sub2");
+            var homesub3 = document.querySelector(".homes-sub3");
+            var icon = document.querySelector(".icon-div");
+            var icon2 = document.querySelector(".icon-div2");
+            var icon3 = document.querySelector(".icon-div3");
+
+            homesub1.addEventListener("mouseover", function(e) {
+                icon.style.display = 'block';
+            });
+
+            homesub1.addEventListener("mouseout", function(e) {
+                icon.style.display = 'none';
+            });
+
+            homesub2.addEventListener("mouseover", function(e) {
+                icon2.style.display = 'block';
+            });
+
+            homesub2.addEventListener("mouseout", function(e) {
+                icon2.style.display = 'none';
+            });
+            homesub3.addEventListener("mouseover", function(e) {
+                icon3.style.display = 'block';
+            });
+
+            homesub3.addEventListener("mouseout", function(e) {
+                icon3.style.display = 'none';
+            });
+            
+    var navItems = document.querySelectorAll(".nav-item");
+
+    navItems.forEach(function(item) {
+        var demos = item.querySelector(".demos");
+
+        item.addEventListener("mouseover", function() {
+            demos.style.display = 'block';
+            console.log("working");
+        });
+
+        item.addEventListener("mouseout", function() {
+            demos.style.display = 'none';
+        });
+    });
+
+
+
+    </script>
 </body>
 </html>
