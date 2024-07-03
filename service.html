@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/brands.min.css" integrity="sha512-DJLNx+VLY4aEiEQFjiawXaiceujj5GA7lIY8CHCIGQCBPfsEG0nGz1edb4Jvw1LR7q031zS5PpPqFuPA8ihlRA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+       .container{
+        height: 700;
+        width: 100%;
+       }
+       .up{
+        background-image: url(images/silhouettes-businesspeople-office_1098-2957.avif);
+        border-radius: 30px;
+        width: 100%;
+        height: 500px;
+        text-align: center;
+        color: rgb(240, 232, 232);
+        margin-top: 50px;
+        padding-top: 70px;
+        font-size: 30px;
+       }
+       .click{
+        display: flex;
+        column-gap: 40px;
+        margin-left: 490px;
+       }
+       .click p{
+        color: white;
+        padding: 10px 10px;
+        border-radius: 20px;
+        background-color: rgb(184, 184, 7);
+        font-size: 20px;
+       }
+       .click p:hover{
+        background:transparent;
+        border: 2px solid;
+        border-color:rgb(184, 184, 7) ;
+       }
+       .A{
+        text-align: center;
+        font-size: 20px;
+        margin-top: 150px;
+       }
+       .BB{
+        height: 200px;
+        width: 500px;
+        display: flex;
+        column-gap:20px;
+        background-color: rgb(223, 144, 116);
+        font-size: 20px;
+        border-radius: 10px;
+        padding-left: 10px;
+       }
+       .BB img{
+        height: 50px;
+        margin-top: 50px;
+        background-color: rgb(138, 193, 224);
+        border-radius: 50%;
+       }
+       .BBB{
+        height: 200px;
+        width: 500px;
+        display: flex;
+        column-gap:20px;
+        background-color: rgb(223, 144, 116);
+        font-size: 20px;
+        border-radius: 10px;
+        padding-left: 10px;
+       }
+       .BBB img{
+        height: 50px;
+        margin-top: 50px;
+        background-color: rgb(235, 216, 109);
+        border-radius: 50%;
+       }
+       .B{
+        display: flex;
+        column-gap: 100px;
+        margin-left: 80px;
+        margin-top: 100px;
+       }
+       .images{
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
+        row-gap: 30px;
+        margin-left: 20px;
+       }
+       .images img{
+        height: 500px;
+        width: 400px;
+        border-radius: 20px;
+       }
+       .images a{
+        text-decoration: none;
+        color: black;
+       }
+       .images a:hover{
+        color: rgb(153, 144, 144);
+       }
+       .C{
+        margin-top: 100px;
+        font-size: 30px;
+       }
+       .D{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 12px;
+        row-gap: 50px;
+       }
+       .D1{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: rgb(223, 144, 116) ;
+        padding-left: 20px;
+        font-size: 20px;
+       }
+       .D1 a{
+       text-decoration: none;
+       color: black;
+       }
+       .D1 a:hover{
+       color: rgb(105, 97, 97) ;
+       }
+       .D2{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: rgb(223, 144, 116) ;
+        padding-left: 20px;
+        font-size: 20px;
+       }
+       .D2 a{
+       text-decoration: none;
+       color: black;
+       }
+       .D2 a:hover{
+       color: rgb(105, 97, 97) ;
+       }
+       .D3{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: rgb(223, 144, 116) ;
+        padding-left: 20px;
+        font-size: 20px;
+       }
+       .D3 a{
+       text-decoration: none;
+       color: black;
+       }
+       .D3 a:hover{
+       color: rgb(105, 97, 97) ;
+       }
+       .D4{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: rgb(223, 144, 116) ;
+        padding-left: 20px;
+        font-size: 20px;
+       }
+       .D4 a{
+       text-decoration: none;
+       color: black;
+       }
+       .D4 a:hover{
+       color: rgb(105, 97, 97) ;
+       }
+       .D5{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: rgb(223, 144, 116) ;
+        padding-left: 20px;
+        font-size: 20px;
+       }
+       .D5 a{
+       text-decoration: none;
+       color: black;
+       }
+       .D5 a:hover{
+       color: rgb(105, 97, 97) ;
+       }
+       .D6{
+        height: 400px;
+        width: 400px;
+        border-radius: 20px;
+        background-color: rgb(223, 144, 116) ;
+        padding-left: 20px;
+        font-size: 20px;
+       }
+       .D6 a{
+       text-decoration: none;
+       color: black;
+       }
+       .D6 a:hover{
+       color: rgb(105, 97, 97) ;
+       }
+       .E{
+        font-size: 20px;
+        margin-top: 100px;
+        margin-left: 30px;
+        display: flex;
+        column-gap: 90px;
+       }
+       .E2 img{
+        height:450px;
+        width: 500px;
+        border-radius: 20px;
+       }
+       .EE{
+        display: flex;
+        column-gap: 50px;
+        margin-top: 50px;
+       }
+       .EE a{
+        text-decoration: none;
+        color: black;
+       }
+       .EE a:hover{
+        color: rgb(102, 95, 95);
+       }
+       .F{
+        display: flex;
+        column-gap: 100px;
+       }
+       .F3{
+        padding-top: 14px;
+       }
+       marquee{
+        margin-top: 100px;
+       }
+       .ready{
+    height: 460px;
+    width: 1200px;
+    background-color: skyblue;
+    margin-top: 150px;
+    margin-left: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+ 
+ .sunny{
+    padding-top: 100px;
+    margin-left: 50px;
+ }
+ .sunny img{
+    margin-left: 550px;
+    margin-top: -550px;
+    border-radius: 50px;
+ }
+ .sunny h1{
+    margin-top: 20px;
+ }
+ .sunny p{
+    margin-top: 20px;
+ }
+ .sunny button{
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(35, 4, 71);
+    color: white;
+ }
+ .blue{
+        margin-top: 50px;
+        height:500px;
+        width: 100%;
+        background-color:rgb(30, 30, 88);
+        display: flex;
+        column-gap: 110px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .blue h1{
+        color: white;
+    }
+    .blue p{
+        color: white;
+    }
+    .blue input{
+        padding: 20px 20px;
+        width: 300px;
+        border-radius: 20px;
+        background-color:rgb(235, 235, 243);
+        border-color: white;
+    }
+    .blue a{
+        border: 1px solid;
+        padding: 10px 10px;
+        border-color: rgb(58, 52, 145);
+        border-radius: 10px;
+        background-color: white;
+    }
+    .link{
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+    }
+    .link :hover{
+        background-color: rgb(104, 104, 158);
+    }
+    .center{
+        text-align: center;
+        color: white;
+        margin-top:-250px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="up">
+            <h1>Take control of your<br> future with our services</h1>
+            <p>Our agency offer organizations assistance in identifying, attracting,<br>
+                 and hiring suitable candidates for their job openings.</p>
+                <div class="click">
+                    <p>For Hiring</p>
+                    <p>For Job Seekers</p>
+                 </div>   
+        </div>
+        <div class="A">
+            <p>SERVICES</p>
+            <h1>Discover our most<br> popular services</h1>
+            <p>Through open communication and a focus on individual growth,<br>
+                 we empower our team members to thrive and contribute their best.</p>
+        </div>
+        <div class="B">
+            <div class="BB">
+            <img src="images/people.svg">
+            <div class="B1">
+                <h2>Services for Hiring</h2>
+                <p>We are provides a comprehensive service that<br> 
+                    identifies the role requirements and designs the job <br>
+                    description for that role.</p>
+            </div>
+            </div>
+            <div class="BBB">
+                <img src="images/people.svg">
+                <div class="B2">
+                 <h2>Services for Job Seekers</h2>
+                 <p>Work out what sets you apart, and ensure these traits <br>
+                    are shown where they count. Throughout them your<br> resume.</p>
+                </div>
+            </div>
+        </div>
+        <div class="images">
+            <div class="img1">
+                <img src="images/onboarding.jpg">
+                <h1>Onboarding Assistance</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img2">
+                <img src="images/referer.jpg">
+                <h1>Reference Checks</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img3">
+                <img src="images/job ana.jpg">
+                <h1>Job Analysis</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img4">
+                <img src="images/assesssment.jpg">
+                <h1>Assessment</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img5">
+                <img src="images/sourcing.jpg">
+                <h1>Sourcing</h1>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="img6">
+                <img src="images/interview.jpg">
+                <h1>Interview</h1>
+                <a href="#">Learn More</a>
+            </div>
+        </div>
+        <div class="C">
+            <p>SERVICES FOR HIRING</p>
+            <h1>What can we actually do for <br>your business?</h1>
+        </div>
+        <div class="D">
+            <div class="D1">
+                <img src="images/corporate trainings.svg">
+                <h1>Corporate Trainings</h1>
+                <p>Utilizing metrics and analysis to determine<br> 
+                    the compatibility of candidates with job<br> requirements, culture, and organizational<br> 
+                    goals.</p>
+                    <br>
+                <a href="#">View More</a>
+            </div>
+            <div class="D2">
+                <img src="images/team buildings.svg">
+                <h1>Team Buildings</h1>
+                <p>Utilizing metrics and analysis to determine<br> 
+                    the compatibility of candidates with job<br> requirements, culture, and organizational<br> 
+                    goals.</p>
+                <br>
+                <a href="#">View More</a>
+            </div>
+            <div class="D3">
+                <img src="images/employment law.svg">
+                <h1>Employment Law</h1>
+                <p>Utilizing metrics and analysis to determine<br> 
+                    the compatibility of candidates with job<br> requirements, culture, and organizational<br> 
+                    goals.</p>
+                <br>
+                <a href="#">View More</a>
+            </div>
+            <div class="D4">
+                <img src="images/business trips.svg">
+                <h1>Business Trips</h1>
+                <p>Utilizing metrics and analysis to determine<br> 
+                    the compatibility of candidates with job<br> requirements, culture, and organizational<br> 
+                    goals.</p>
+                <br>
+                <a href="#">View More</a>
+            </div>
+            <div class="D5">
+                <img src="images/employee skill.svg">
+                <h1>Employee Skill</h1>
+                <p>Utilizing metrics and analysis to determine<br> 
+                    the compatibility of candidates with job<br> requirements, culture, and organizational<br> 
+                    goals.</p>
+                <br>
+                <a href="#">View More</a>
+            </div>
+            <div class="D6">
+                <img src="images/finance.svg">
+                <h1>Finance & Restructuring</h1>
+                <p>Utilizing metrics and analysis to determine<br> 
+                    the compatibility of candidates with job<br> requirements, culture, and organizational<br> 
+                    goals.</p>
+                <br>
+                <a href="#">View More</a>
+            </div>
+        </div>
+        <div class="E">
+            <div class="E1">
+              <p>SERVICES FOR JOB SEEKERS</p>
+              <h1>Find your perfect job<br> based on your interest</h1>
+              <p>Recruitment services, often provided by specialized agencies or firms,<br>
+                 offer organizations assistance in identifying, attracting, and hiring <br>
+                 suitable candidates for their job openings.</p>
+                 <div class="EE">
+                 <div class="Ea">
+                    <a href="#">On-the-Job Trainings</a><br><br>
+                    <a href="#">High Volume Hiring</a><br><br>
+                    <a href="#">Presentation Skills</a><br><br>
+                 </div>
+                 <div class="Eb">
+                    <a href="#">Interview Workshops</a><br><br>
+                    <a href="#">Job Representation</a><br><br>
+                    <a href="#">Employee Community</a><br><br>
+                 </div>
+                 </div>
+            </div>
+            <div class="E2">
+                <img src="images/hands pic.jpg">
+            </div>
+        </div>
+        <marquee>
+        <div class="F">
+           <div class="F1"> 
+           <img src="images/1.svg">
+           </div>
+            <div class="F2">
+            <img src="images/2.svg">
+            </div>
+             <div class="F3">
+              <img src="images/3.svg">
+             </div>
+              <div class="F4">
+               <img src="images/4.svg">
+              </div>
+               <div class="F5"> 
+                 <img src="images/5.svg">
+               </div>
+               <div class="F6"> 
+                <img src="images/1.svg">
+                </div>
+                 <div class="F7">
+                 <img src="images/2.svg">
+                 </div>
+                  <div class="F8">
+                   <img src="images/3.svg">
+                  </div>
+                   <div class="F9">
+                    <img src="images/4.svg">
+                   </div>
+                    <div class="F10"> 
+                      <img src="images/5.svg">
+                    </div>
+        </div>
+    </marquee>
+    <div class="ready">
+        <div class="sunny">
+            <h3>CONTACT</h3>
+            <h1>Ready To Talk ?</h1>
+            <p>Recruitment services, often provided by specialized agencies 
+                or <br> firms, offer organizations assistance in identifying, 
+                attracting, and <br> hiring suitable candidates for their job
+                 openings.</p> <br>
+                 <button> Contact Us</button>
+                 <img src="images/hands pic.jpg" alt="" height="410px" width="500px">
+        </div>
+    </div>
+    <div class="blue">
+        <div class="title1">
+            <h1>Contact</h1>
+            <p>5 Washington Square, New York,<br> USA 83475</p>
+            <p>(217) 555-0113</p>
+            <p>hconsult@example.com</p>
+        </div>
+        <div class="title2">
+            <h1>Company</h1>
+            <p>About Us</p>
+            <p>Services</p>
+            <p>Pricing</p>
+        </div>
+        <div class="title3">
+            <h1>Useful Links</h1>
+            <p>FAQ</p>
+            <p>Location</p>
+            <p>Contact Us</p>
+        </div>
+        <div class="title4">
+            <h1>Sign up for our newsletter!</h1>
+            <input type="text" placeholder="Enter Your Email Address"> <br> <br>
+            <div class="link">
+                <div class="link1">
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <div class="link2">
+            <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+            <div class="link3">
+            <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+            <div class="link4">
+            <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <h1>Human consult</h1><br><br>
+        <p>©Human Consult. All Rights Reserved.<br>
+            Licensing Webflow Templates by 128.digital. Powered by Webflow</p>
+    </div>
+    </div>
+</body>
+</html>

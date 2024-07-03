@@ -27,7 +27,7 @@ nav{
     position:fixed;
     top:0;
     width:100%; 
-    background-color: aliceblue;
+    background-color: pink;
 }
 .nav-items{
     display: flex;
@@ -221,7 +221,7 @@ button {
     background-color: aquamarine;
     border-radius: 50%;
 }
- /* .demos {
+ .demos {
     background-color:white;
     display: none;
   }
@@ -272,9 +272,9 @@ button {
 }
 .allpages li {
     background-color: white;
-} */
+}
 
-.demos ul{
+/* .demos ul{
   display:inline-block;
   box-shadow: 2px 2px 5px black;
   opacity:0;
@@ -310,7 +310,7 @@ button {
 }
 .allpages ul:hover {
   opacity: 1;
-}
+} */
 
 
 
@@ -637,3 +637,21 @@ button {
   margin-top:-250px;
 } 
 
+.popup{
+  width:400px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: white;
+  margin-left: 400px;
+  display: none;
+}
+.pop-para{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+}
+.btn{
+  width:20px;
+  height: 20px;
+  margin-left: 360px;
+}
