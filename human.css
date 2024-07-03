@@ -221,7 +221,7 @@ button {
     background-color: aquamarine;
     border-radius: 50%;
 }
- .demos {
+ /* .demos {
     background-color:white;
     display: none;
   }
@@ -272,13 +272,328 @@ button {
 }
 .allpages li {
     background-color: white;
+} */
+
+.demos ul{
+  display:inline-block;
+  box-shadow: 2px 2px 5px black;
+  opacity:0;
 }
- 
+.demos ul:hover {
+  opacity: 1;
+}
+.company ul {
+  display: inline-block;
+  box-shadow: 2px 2px 5px black;
+  opacity: 0;
+}
+.company ul:hover {
+  opacity: 1;
+}
+.hiring {
+  display: flex;
+}
+.hiring ul {
+  display: inline-block;
+  box-shadow: 2px 2px 5px black;
+  opacity: 0;
+}
+.hiring ul:hover{
+  opacity: 1;
+}
+.allpages {
+  display: flex;
+}
+.allpages ul {
+  box-shadow: 2px 2px 5px black;
+  opacity:0;
+}
+.allpages ul:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.inner-para .p4{
+   font-size: 55px;
+   text-align: center;
+   margin-top:100px;
+}
+.inner-page {
+  width:100%;
+  display: flex;
+  gap:10px;
+  margin-left: 40px;
+  margin-top: 40px;
+}
+.inner-sub1 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner-sub2 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner-sub3 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner-sub4 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icon-div4 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div4 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.icon-div5 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div5 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.icon-div6 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div6 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.icon-div7 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div7 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.img7{
+  width:300px;
+  height:550px;
+  border-radius: 10px;
+}
+.img8{
+  width:300px;
+  height:550px;
+  border-radius: 10px;
+}
+.img9{
+  width:300px;
+  height:550px;
+  border-radius:10px;
+}
+.img10{
+  width:300px;
+  height:550px;
+  border-radius: 10px;
+}
+.inner-page .img7:hover {
+  border:5px solid blue;
+}
+.inner-page .img8:hover {
+  border:5px solid blue;
+}
+.inner-page .img9:hover {
+  border:5px solid blue;
+}
+.inner-page .img10:hover {
+  border:5px solid blue;
+}
+
+.inner-page2 {
+  width:100%;
+  display: flex;
+  gap:10px;
+  margin-left: 40px;
+  margin-top: 380px;
+}
+.inner-sub5 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner-sub6 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner-sub7 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.inner-sub8 p{
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icon-div8 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div8 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.icon-div9 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div9 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.icon-div10 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div10 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.icon-div11 {
+  border-radius: 50%;
+  width:50px;
+  height:50px;
+  margin-top: -400px;
+  margin-left: 110px;
+} 
+.icon-div11 ion-icon {
+  margin:18px 18px;
+  color:blueviolet;
+  width:50px;
+  height:50px;
+  background-color: aquamarine;
+  border-radius: 50%;
+} 
+.img11{
+  width:300px;
+  height:550px;
+  border-radius: 10px;
+}
+.img12{
+  width:300px;
+  height:550px;
+  border-radius: 10px;
+}
+.img13{
+  width:300px;
+  height:550px;
+  border-radius:10px;
+}
+.img14{
+  width:300px;
+  height:550px;
+  border-radius: 10px;
+}
+.inner-page2 .img11:hover {
+  border:5px solid blue;
+}
+.inner-page2 .img12:hover {
+  border:5px solid blue;
+}
+.inner-page2 .img13:hover {
+  border:5px solid blue;
+}
+.inner-page2 .img14:hover {
+  border:5px solid blue;
+}
+
+
+
+
+
 
 
 .blue{
   margin-top: 50px;
-  height:500px;
+  height: 500px;
   width: 100%;
   background-color:rgb(30, 30, 88);
   display: flex;

@@ -1,0 +1,35 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+background-color: blue;
+text-align: center;
+}
+.container h3{
+    font-size: 30px;
+    color:grey;
+    margin-bottom: 40px;
+}
+.container p{
+    font-size: 60px;
+    color:orange;
+}
+.container span{
+    font-size: 50px;
+    padding-bottom: 50px;
+}
+.container .p1{
+    font-size: 20px;
+    color:grey;
+}
+.container .p2{
+    font-size: 20px;
+    color:grey;
+}
+.container .p3{
+    font-size: 20px;
+    color:grey;
+}
+
