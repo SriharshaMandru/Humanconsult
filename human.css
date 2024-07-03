@@ -27,7 +27,7 @@ nav{
     position:fixed;
     top:0;
     width:100%; 
-    background-color: pink;
+    background-color: aliceblue;
 }
 .nav-items{
     display: flex;

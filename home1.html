@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home 1</title>
     <link rel="stylesheet" href="home1.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 <body>
     <div class="container">
@@ -14,6 +16,79 @@
         <p class="p1">We understand that for you, it’s never just a job. It’s your business.</p>
         <p class="p2">Thats why we Possionate about not only finding you a quality employee.</p>
         <p class="p3">But also the perfect fit.</p>
+        <button>Free consulation</button> 
+        <span class="s1"><a href="">join services<ion-icon name="arrow-forward-outline"></ion-icon></a></span>
     </div>
+
+    <div class="container2">
+        <div class="about">
+            <h2>About our Consulting Agency</h2>
+            <p class="p4">Recruitment services, often provided by specialized agencies or firms, offer organizations assistance in identifying, attracting, and hiring suitable candidates for their job openings.</p>
+            <ul>
+                <li>Find full-time jobs and interships that are perfect for you.</li>
+                <li>Get more personalized job recommendations directly.</li>
+                <li>Explore job roles based of your study major</li>
+            </ul>
+        </div>
+        <div><img src="images.jfif"></div>
+    </div>
+    <div class="container3">
+    <div class="wrapper">
+        <div class="testimonial-container" id="testimonial-container"></div>
+        <button id="prev">&lt;</button>
+        <button id="next">&gt;</button>
+    </div>
+    </div>
+    <script>
+        const testimonials = [{
+    name:"Eva sawyer",
+    job:"CEO, Fashworks",
+    image: "jennifer.jfif",
+    testimonial:
+    "Neque voluptas ac tincidus vitae semper quis lectus nulla at voluptas diam ut venenatis telus in metus vulptate eu scelerisque felis imperdiet proin "
+},
+{
+    name:"Katey Topaz",
+    job:"Developer, TechCrew",
+    image: "captain.jfif",
+    testimonial:"Neque voluptas ac tincidus vitae semper quis lectus nulla at voluptas diam ut venenatis telus in metus vulptate eu scelerisque felis imperdiet proin "
+},
+{
+    name:"Nicola Blakely",
+    job:"CEO, Zeal Wheels",
+    image: "harry.jfif",
+    testimonial:"Neque voluptas ac tincidus vitae semper quis lectus nulla at voluptas diam ut venenatis telus in metus vulptate eu scelerisque felis imperdiet proin "
+},
+   { name:"Jack sparrow",
+    job:"Hollywood Hero, sparrow",
+    image: "sparrow.jfif",
+    testimonial:"Neque voluptas ac tincidus vitae semper quis lectus nulla at voluptas diam ut venenatis telus in metus vulptate eu scelerisque felis imperdiet proin "
+   },
+];
+let i = 0;
+let j = testimonials.length;
+
+let testimonialContainer = document.getElementById("testimonial-container");
+let nextBtn = document.getElementById("next");
+let prevBtn = document.getElementById("prev");
+
+nextBtn.addEventListener("click",() => {
+    i = (j + i + 1 )%j;
+    displayTestimonial();
+})
+prevBtn.addEventListener("click",() => {
+    i = (j + i - 1 )%j;
+    displayTestimonial();
+})
+
+let displayTestimonial = () =>{
+    testimonialContainer.innerHTML = `<p>${testimonials[i].testimonial}</p>
+    <img src=${testimonials[i].image}>
+    <h3>${testimonials[i].name}</h3>
+    <h6>${testimonials[i].job}</h6>`
+
+};
+window.onload = displayTestimonial;
+    </script>
 </body>
 </html>
