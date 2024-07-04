@@ -2,11 +2,13 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    outline: none;
 }
 body{
   background-color: pink;
+  overflow-x: hidden;
 }
-.logo{
+/* .logo{
     display: flex;
 }
 .logo-img {
@@ -63,7 +65,7 @@ button {
     border: none;
     margin-top: 15px;
     margin-left: 50px;
-}
+} */
 .para {
     margin-top: 70px;
     text-align: center;
@@ -221,7 +223,7 @@ button {
     background-color: aquamarine;
     border-radius: 50%;
 }
- .demos {
+ /* .demos {
     background-color:white;
     display: none;
   }
@@ -272,9 +274,9 @@ button {
 }
 .allpages li {
     background-color: white;
-}
+}  */
 
-/* .demos ul{
+ /* .demos ul{
   display:inline-block;
   box-shadow: 2px 2px 5px black;
   opacity:0;
@@ -310,7 +312,83 @@ button {
 }
 .allpages ul:hover {
   opacity: 1;
-} */
+}  */
+.logo{
+  display: flex;
+}
+img{
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 100px;
+  border-bottom:1px solid blue;
+}
+header ul li{
+   display: inline-block;
+   list-style:none ;
+   margin: 0 30px;
+}
+header ul li:last-child{
+  margin-right: 0;
+}
+header ul li a{
+  text-decoration: none;
+  color: green;
+  padding:22px 0;
+  display: inline-block;
+  transition:all ease 0.3s;
+  font-size: 18px;
+}
+header ul li a:hover {
+  color:orange;
+}
+header ul .submenu {
+  position: absolute;
+  width:200px;
+  background-color: #fff;
+  box-shadow: 0 20px 45px black;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition:all ease 0.5s;
+}
+header ul li:hover .submenu{
+  z-index:99;
+  opacity: 1;
+  margin-top: 0;
+}
+header ul .submenu li{
+  margin: 0;
+  width:100%;
+
+}
+header ul .submenu li a{
+  padding:15px 20px;
+  display: inline-block;
+  width:100%;
+}
+.icon{
+  width:30px;
+  height:30px;
+}
+button{
+  border-radius: 50px;
+  width:100px;
+  height: 40px;
+  border: none;
+  background-color: blue;
+  font-size: 20px;
+  margin-left: 10px;
+}
+header{
+  background-color: aliceblue;
+}
 
 
 

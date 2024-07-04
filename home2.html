@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME 2</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            width: 100%;
+        }
+        .container {
+            width: 100%;
+            height: 1000px;             
+        }
+        .bgm {
+            height: 700px; 
+            width: 100%;
+            background-image: url(images/background.webp);
+            background-size: cover;
+            display: flex;
+            padding-left: 100px;
+            align-items: center;
+        }
+        .bgm1 {
+            max-width: 500px;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .bgm1 h1 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+        .bgm1 p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        .bgm1 a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        .bgm1 a:hover {
+            background-color: #0056b3;
+        }
+        .A{
+            display: flex;
+            column-gap: 10px;
+            margin-top: 100px;
+        }
+        .A1{
+            padding-left: 20px;
+            font-size: 20px;
+        }
+        .A1 a{
+            text-decoration: none;
+            color: white;
+            background-color: #0056b3;
+            border-radius:20px;
+            padding: 10px 10px;
+            margin-top: 100px;
+        }
+        .A1 a:hover{
+            background-color:rgb(31, 31, 43) ;
+        }
+        .A2 img{
+            padding-right: 20px;
+        }
+        .A3 {
+            text-align: center;
+            padding-left: 20px;
+            margin-top: -50px;
+            
+        }
+        .A3 h1{
+            color: rgb(219, 167, 70);
+            font-size: 50px;
+        }
+        .A3 p{
+            font-size: 20px;
+            margin-top: -70px;
+        }
+        .B{
+            text-align: center;
+            font-size: 20px;
+            margin-top: 100px;
+        }
+        .C{
+            display: flex;
+            column-gap: 70px;
+            margin-left: 50px;
+            margin-top: 100px;
+        }
+        .D{
+            background-color: #073464;
+            border-radius: 30px;
+            color: white;
+            padding-top: 30px;
+        }
+        .D p {
+            padding-left: 30px;
+        }
+        .D h1{
+            padding: 30px;
+        }
+        .DD{
+            display: flex;
+            column-gap: 20px;
+            padding-left: 30px;
+        }
+        .DD img{
+            height:500px;
+            width: 400px;
+            border-radius: 30px;
+        }
+        .E{
+            text-align: center;
+            margin-top: 100px;
+            background-color: rgb(204, 142, 27);
+            border-radius: 30px;
+            padding: 40px;
+        }
+        .E img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+        }
+        .F{
+            background-color:rgb(189, 150, 79);
+            border-radius: 30px;
+            padding: 30px 30px;
+            margin-top: 100px;
+        }
+        .FF{
+            display: flex;
+            column-gap: 70px;
+            margin-left:20px;
+        }
+        .FF img {
+            height: 400px;
+            width: 350px;
+            border-radius: 30px
+        }
+        .FF a{
+            text-decoration: none;
+            color: black;
+        }
+        .FF a:hover{
+            color:rgb(107, 102, 102) ;
+        }
+        .ready{
+    height: 460px;
+    width: 1200px;
+    background-color: skyblue;
+    margin-top: 150px;
+    margin-left: 50px;
+    border-radius: 50px;
+    font-size: 20px;
+}
+ 
+ .sunny{
+    padding-top: 100px;
+    margin-left: 50px;
+ }
+ .sunny img{
+    margin-left: 550px;
+    margin-top: -550px;
+    border-radius: 50px;
+ }
+ .sunny h1{
+    margin-top: 20px;
+ }
+ .sunny p{
+    margin-top: 20px;
+ }
+ .sunny button{
+    margin-top: 30px;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: 0;
+    background-color: rgb(35, 4, 71);
+    color: white;
+ }
+ .blue{
+        margin-top: 50px;
+        height:500px;
+        width: 100%;
+        background-color:rgb(30, 30, 88);
+        display: flex;
+        column-gap: 110px;
+        padding-left: 30px;
+        padding-top: 20px;
+    }
+    .blue h1{
+        color: white;
+    }
+    .blue p{
+        color: white;
+    }
+    .blue input{
+        padding: 20px 20px;
+        width: 300px;
+        border-radius: 20px;
+        background-color:rgb(235, 235, 243);
+        border-color: white;
+    }
+    .blue a{
+        border: 1px solid;
+        padding: 10px 10px;
+        border-color: rgb(58, 52, 145);
+        border-radius: 10px;
+        background-color: white;
+    }
+    .link{
+        display: flex;
+        column-gap: 60px;
+        margin-top: 30px;
+    }
+    .link :hover{
+        background-color: rgb(104, 104, 158);
+    }
+    .center{
+        text-align: center;
+        color: white;
+        margin-top:-250px;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bgm">
+            <div class="bgm1">
+                <p>WE ARE #1 ON THE MARKET</p>
+                <h1>Find your job<br>build your career</h1>
+                <p>We understand that for you, it’s never just a job. It’s your<br>business. That’s why we not only
+                     find you a quality<br>employee but also the perfect fit.</p>
+                <a href="#">Free Consultation</a>
+                <a href="#">Job Services</a>
+            </div>
+        </div>
+        <div class="A">
+            <div class="A1">
+                <h1>More than 1580+<br> people engaged</h1>
+                <p>Recruitment services, often provided by specialized <br>agencies or firms, offer organizations
+                     assistance in <br>identifying, attracting, and hiring suitable for their job<br> openings.</p>
+                 <a href="#">Discover Jobs</a>    
+            </div>
+            <div class="A2">
+                <img src="images/graph.webp">
+            </div>
+            <div class="A3">
+                <h1>10+</h1>
+                <p>Expierence</p><br>
+                <h1>185+</h1>
+                <p>Satisfied Clients</p><br>
+                <h1>60+</h1>
+                <p>Team Members</p>
+            </div>
+        </div>
+        <div class="B">
+            <p>HOW WE WORK</p>
+            <h1>How We Can Make Your<br> Consultation</h1>
+            <p>Through open communication, flexible work arrangements, and a focus<br>
+                 on individual growth, we empower our team members to thrive and <br>
+                 contribute their best.</p>
+        </div>
+        <div class="C">
+        <div class="C1">
+        <h1>1. Resume Assessments</h1>
+        <p>A comprehensive evaluation of resumes to<br>
+         gauge qualifications, experience, and <br>
+         suitability for specific roles or industries.</p>
+        </div>
+        <div class="C2">
+        <h1>2. Job Fit Scoring</h1>
+        <p>Utilizing metrics and analysis to determine the <br>compatibility of candidates with job
+         <br>requirements, culture, and organizational <br>goals.</p>
+        </div>
+        <div class="C3">
+        <h1>3. Top-Notch Help</h1>
+        <p>Premium assistance and support services <br>
+        designed to enhance performance, efficiency, <br>
+        and effectiveness in various professional<br>
+         contexts.</p>
+        </div>
+        </div>
+        <div class="D">
+            <p>SERVICES</p>
+            <h1>Explore Our <br>
+                Comprehensive Services</h1>
+                <div class="DD">
+                    <div class="D1">
+                        <img src="images/onboarding.jpg">
+                        <h1>Onboarding Assistance</h1>
+                    </div>
+                    <div class="D2">
+                        <img src="images/reference.jpg">
+                        <h1>Reference Checkse</h1>
+                    </div>
+                    <div class="D3">
+                        <img src="images/job.jpg">
+                        <h1>Job Analysis</h1>
+                    </div>
+                </div>
+        </div>
+        <div class="E">
+            <p>TESTIMONIALS</p>
+            <h2>"I've used this platform to hire various<br> services for both personal and professional
+                <br> projects, from home cleaning to legal<br> consulting."</h2>
+             <img src="images/benjemin.webp">   <br>
+             <h1>Benjemin</h1>
+             <p>Developer</p>
+        </div>
+        <div class="F">
+            <p>BLOG</p>
+            <h1>Take a look at our latest<br>
+                 articles & resources</h1>
+                 <div class="FF">
+                    <div class="F1">
+                        <img src="images/human resource.jpg">
+                        <h3>Human Resources</h3>
+                        <h1>Leadership training is a <br>benefit</h1>
+                        <p>Employees who receive leadership training can <br>bring those skills back to
+                             the workplace and <br>use them to improve their own performance.</p><br><br>
+                        <a href="3">Read More</a>
+                    </div>
+                    <div class="F2">
+                        <img src="images/jobs team.jpg">
+                        <h3>Jobs</h3>
+                        <h1>Top 5 Team Building<br> Idea</h1>
+                        <p>Coming up with new and innovative team <br>building ideas can be a challenge for any<br>
+                             business owner or manager.</p><br><br>
+                        <a href="3">Read More</a>
+                    </div>
+                    <div class="F3">
+                        <img src="images/news.jpg">
+                        <h3>News</h3>
+                        <h1>Social sourcing is the <br>future</h1>
+                        <p>Discuss the importance of savoring each bite,<br> recognizing hunger and fullness
+                             cues, and<br> cultivating a positive relationship with food.</p><br><br>
+                        <a href="3">Read More</a>
+                    </div>
+                 </div>
+        </div>
+        <div class="ready">
+            <div class="sunny">
+                <h3>CONTACT</h3>
+                <h1>Ready To Talk ?</h1>
+                <p>Recruitment services, often provided by specialized <br>agencies 
+                    or firms, offer organizations assistance in <br>identifying, 
+                    attracting, and  hiring suitable<br> candidates for their job
+                     openings.</p> <br>
+                     <button> Contact Us</button>
+                     <img src="images/hands pic.jpg" height="410px" width="500px">
+            </div>
+        </div>
+        <div class="blue">
+            <div class="title1">
+                <h1>Contact</h1>
+                <p>5 Washington Square, New York,<br> USA 83475</p>
+                <p>(217) 555-0113</p>
+                <p>hconsult@example.com</p>
+            </div>
+            <div class="title2">
+                <h1>Company</h1>
+                <p>About Us</p>
+                <p>Services</p>
+                <p>Pricing</p>
+            </div>
+            <div class="title3">
+                <h1>Useful Links</h1>
+                <p>FAQ</p>
+                <p>Location</p>
+                <p>Contact Us</p>
+            </div>
+            <div class="title4">
+                <h1>Sign up for our newsletter!</h1>
+                <input type="text" placeholder="Enter Your Email Address"> <br> <br>
+                <div class="link">
+                    <div class="link1">
+                <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="link2">
+                <a href="https://www.facebook.com/login/"><i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="link3">
+                <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <div class="link4">
+                <a href="https://www.linkedin.com/login"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="center">
+            <h1>Human consult</h1><br><br>
+            <p>©Human Consult. All Rights Reserved.<br>
+                Licensing Webflow Templates by 128.digital. Powered by Webflow</p>
+        </div>
+        </div>
+    </body>
+    </html>
+    </div>
+</body>
+</html>
