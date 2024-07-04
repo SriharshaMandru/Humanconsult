@@ -57,7 +57,7 @@ button{
 }
 .container2{
     display: flex;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .about{
     width:50%;
@@ -73,7 +73,7 @@ li{
     line-height: 20px;
 }
 
-img {
+.img {
     width:600px;
     height: 400px;
     border-radius: 50px;
@@ -95,7 +95,7 @@ img {
     /* left:50%;
     top:50%;  */
     margin-left: 50%;
-    margin-top: 350px;
+    margin-top: 230px;
     box-shadow: 0 1.8em 3em rgba(1,17,39,0.15);
     display:flex;
 }
@@ -137,6 +137,156 @@ button#next{
 button#prev {
     left:-1.1em;
 }
+
+
+
+.logo{
+    display: flex;
+  }
+  img{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 100px;
+    border-bottom:1px solid blue;
+  }
+  header ul li{
+     display: inline-block;
+     list-style:none ;
+     margin: 0 30px;
+  }
+  header ul li:last-child{
+    margin-right: 0;
+  }
+  header ul li a{
+    text-decoration: none;
+    color: green;
+    padding:22px 0;
+    display: inline-block;
+    transition:all ease 0.3s;
+    font-size: 18px;
+  }
+  header ul li a:hover {
+    color:orange;
+  }
+  header ul .submenu {
+    position: absolute;
+    width:200px;
+    background-color: #fff;
+    box-shadow: 0 20px 45px black;
+    margin-top: -50px;
+    opacity: 0;
+    z-index: -999;
+    transition:all ease 0.5s;
+  }
+  header ul li:hover .submenu{
+    z-index:99;
+    opacity: 1;
+    margin-top: 0;
+  }
+  header ul .submenu li{
+    margin: 0;
+    width:100%;
+  
+  }
+  header ul .submenu li a{
+    padding:15px 20px;
+    display: inline-block;
+    width:100%;
+  }
+  .icon{
+    width:30px;
+    height:30px;
+  }
+  button{
+    border-radius: 50px;
+    width:100px;
+    height: 40px;
+    border: none;
+    background-color: blue;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  .anchor{
+    text-decoration: none;
+    color:white;
+  }
+  header{
+    background-color: aliceblue;
+  }
+
+
+
+  .blue{
+    margin-top: 50px;
+    height: 500px;
+    width: 100%;
+    background-color:rgb(30, 30, 88);
+    display: flex;
+    column-gap: 110px;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin-top: 500px;
+  } 
+  .blue h1{
+    color: white;
+  }
+  .blue p{
+    color: white;
+  }
+  .blue input{
+    padding: 20px 20px;
+    width: 300px;
+    border-radius: 20px;
+    background-color:rgb(235, 235, 243);
+    border-color: white;
+    border:none;
+  }
+  .blue a{
+    border: 1px solid;
+    padding: 10px 10px;
+    border-color: rgb(58, 52, 145);
+    border-radius: 10px;
+    background-color: white;
+  }
+  .link{
+    display: flex;
+    column-gap: 60px;
+    margin-top: 30px;
+  }
+  .link :hover{
+    background-color: rgb(104, 104, 158);
+  }
+  .center{
+    text-align: center;
+    color: white;
+    margin-top:-250px;
+  } 
+  
+  .popup{
+    width:400px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: pink;
+    margin-left: 400px;
+    display: none;
+  }
+  .pop-para{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+  }
+  .btn{
+    width:20px;
+    height: 20px;
+    margin-left: 360px;
+  }
 
 
 

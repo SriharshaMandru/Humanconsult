@@ -5,12 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="news.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
     
 </head>
 <body>
+      
+
+
+
+    <main>
+        <header>
+            <div class="logo">
+                <div><img src="images/logo.png"></div>
+               <div><h1>Human Consult</h1></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Demos
+                        <ul class="submenu">
+                            <li><a href="home1.html" target="_blank">Home1</a></li>
+                            <li><a href="home2.html" target="_blank">Home2</a></li>
+                            <li><a href="home3.html" target="_blank">Home3</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#">company
+                        <ul class="submenu">
+                            <li><a href="about.html" target="_blank">About</a></li>
+                            <li><a href="service.html" target="_blank">Services</a></li>
+                            <li><a href="award.html" target="_blank">Awards</a></li>
+                            <li><a href="leadership.html" target="_blank">Leadership</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#">Services
+                        <ul class="submenu">
+                            <li><a href="service.html" target="_blank">Services</a></li>
+                            <li><a href="#contactus" target="_blank">contactus</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">All pages
+                        <ul class="submenu">
+                            <li><a href="home1.html" target="_blank">Home1</a></li>
+                            <li><a href="home2.html" target="_blank">Home2</a></li>
+                            <li><a href="home3.html" target="_blank">Home3</a></li>
+                            <li><a href="about.html" target="_blank">About</a></li>
+                            <li><a href="award.html" target="_blank">Awards</a></li>
+                            <li><a href="leadership.html" target="_blank">Leadership</a></li>
+                            <li><a href="service.html" target="_blank">Services</a></li>
+                            <li><a href="#contactus" target="_blank">contactus</a></li>
+                        </ul>
+                    </a></li>
+                    <ion-icon name="cart-outline" class="icon"></ion-icon>
+                    <button><a href="#contactus" class="anchor">Get Touch</a></button>
+                </ul>
+            </nav>
+        </header>
+      </main>
+
+
+
+
+      <div class="popup">
+        <button id="close" class="btn">&times;</button>
+        <p class="pop-para">No items added </p>
+    </div>
+
     <div class="head">
        <h1>  Latest Blogs & News</h1>
     </div>
@@ -86,7 +149,7 @@
             </div>
 
         </div>
-        <div class="blue">
+        <div class="blue" id="contactus">
             <div class="title1">
                 <h1>Contact</h1>
                 <br>
@@ -138,6 +201,17 @@
             <h1>Human consult</h1><br><br>
             <p>©Human Consult. All Rights Reserved.<br>
                 Licensing Webflow Templates by 128.digital. Powered by Webflow</p>
-            </div>   
+            </div>  
+            
+            
+            <script>
+                document.querySelector("#close").addEventListener("click",function(){
+        document.querySelector(".popup").style.display = "none";
+    });
+
+    document.querySelector(".icon").addEventListener("click",function(){
+        document.querySelector(".popup").style.display = "block";
+    });
+            </script>
 </body>
 </html>

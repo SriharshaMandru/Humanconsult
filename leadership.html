@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leadership</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
     .container{
@@ -134,9 +139,172 @@
         color: white;
         margin-top:-250px;
     }
+
+    .logo{
+  display: flex;
+}
+img{
+  width:40px;
+  height: 40px;
+  border-radius: 50%;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  padding: 0 100px;
+  border-bottom:1px solid blue;
+}
+header ul li{
+   display: inline-block;
+   list-style:none ;
+   margin: 0 30px;
+}
+header ul li:last-child{
+  margin-right: 0;
+}
+header ul li a{
+  text-decoration: none;
+  color: green;
+  padding:22px 0;
+  display: inline-block;
+  transition:all ease 0.3s;
+  font-size: 18px;
+}
+header ul li a:hover {
+  color:orange;
+}
+header ul .submenu {
+  position: absolute;
+  width:200px;
+  background-color: #fff;
+  box-shadow: 0 20px 45px black;
+  margin-top: -50px;
+  opacity: 0;
+  z-index: -999;
+  transition:all ease 0.5s;
+}
+header ul li:hover .submenu{
+  z-index:99;
+  opacity: 1;
+  margin-top: 0;
+}
+header ul .submenu li{
+  margin: 0;
+  width:100%;
+
+}
+header ul .submenu li a{
+  padding:15px 20px;
+  display: inline-block;
+  width:100%;
+}
+.icon{
+  width:30px;
+  height:30px;
+}
+button{
+  border-radius: 50px;
+  width:100px;
+  height: 40px;
+  border: none;
+  background-color: blue;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.anchor{
+  text-decoration: none;
+  color:white;
+}
+header{
+  background-color: aliceblue;
+}
+
+.popup{
+  width:400px;
+  height: 200px;
+  border-radius: 20px;
+  background-color: pink;
+  margin-left: 400px;
+  display: none;
+}
+.pop-para{
+  text-align: center;
+  margin-top: 40px;
+  font-size: 25px;
+}
+.btn{
+  width:20px;
+  height: 20px;
+  margin-left: 360px;
+}
+
+
+
     </style>
 </head>
 <body>
+
+
+    <main>
+        <header>
+            <div class="logo">
+                <div><img src="images/logo.png"></div>
+               <div><h1>Human Consult</h1></div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Demos
+                        <ul class="submenu">
+                            <li><a href="home1.html" target="_blank">Home1</a></li>
+                            <li><a href="home2.html" target="_blank">Home2</a></li>
+                            <li><a href="home3.html" target="_blank">Home3</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#">company
+                        <ul class="submenu">
+                            <li><a href="about.html" target="_blank">About</a></li>
+                            <li><a href="service.html" target="_blank">Services</a></li>
+                            <li><a href="award.html" target="_blank">Awards</a></li>
+                            <li><a href="leadership.html" target="_blank">Leadership</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="#">Services
+                        <ul class="submenu">
+                            <li><a href="service.html" target="_blank">Services</a></li>
+                            <li><a href="#contactus" target="_blank">contactus</a></li>
+                        </ul>
+                    </a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="#">All pages
+                        <ul class="submenu">
+                            <li><a href="home1.html" target="_blank">Home1</a></li>
+                            <li><a href="home2.html" target="_blank">Home2</a></li>
+                            <li><a href="home3.html" target="_blank">Home3</a></li>
+                            <li><a href="about.html" target="_blank">About</a></li>
+                            <li><a href="award.html" target="_blank">Awards</a></li>
+                            <li><a href="leadership.html" target="_blank">Leadership</a></li>
+                            <li><a href="service.html" target="_blank">Services</a></li>
+                            <li><a href="#contactus" target="_blank">contactus</a></li>
+                        </ul>
+                    </a></li>
+                    <ion-icon name="cart-outline" class="icon"></ion-icon>
+                    <button><a href="#contactus" class="anchor">Get Touch</a></button>
+                </ul>
+            </nav>
+        </header>
+      </main>
+
+
+      <div class="popup">
+        <button id="close" class="btn">&times;</button>
+        <p class="pop-para">No items added </p>
+    </div>
+
+
+
+
     <div class="container">
         <div class="head">
            <h1>The Consultors</h1>
@@ -220,7 +388,7 @@
                 recruitment process internally.</p>
             <h3>Our Services</h3>    
         </div>
-        <div class="blue">
+        <div class="blue" id="contactus">
             <div class="title1">
                 <h1>Contact</h1>
                 <p>5 Washington Square, New York,<br> USA 83475</p>
@@ -264,5 +432,19 @@
                 Licensing Webflow Templates by 128.digital. Powered by Webflow</p>
         </div>
     </div>
+
+
+    <script>
+
+document.querySelector("#close").addEventListener("click",function(){
+        document.querySelector(".popup").style.display = "none";
+    });
+
+    document.querySelector(".icon").addEventListener("click",function(){
+        document.querySelector(".popup").style.display = "block";
+    });
+
+
+    </script>
 </body>
 </html>
